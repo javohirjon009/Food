@@ -1,0 +1,127 @@
+
+.content_p{
+    @extend .wrapper_p;
+}
+.content_text{
+    @extend .wrapper_subtitle;
+}
+.text_p{
+    @extend .card_text;
+    width: 64%;
+    margin:15px auto;
+}
+
+.content_card-p{
+    font-family: "Philosopher";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--color-black);
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.content_card-p2{
+    @extend .content_card-p;
+}
+.card_span{
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+.card_bottom_p{
+    @extend .card_text;
+    width: 88%;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+.pulus{
+    font-size: 28px;
+    position: relative;
+    top: -10px;
+    left: -28px;
+}
+.bottom-div{
+    margin-left: 20px;
+}
+.card_bottom-div{
+    display: flex;
+    align-items: center;
+    gap: 170px;
+}
+.content_card{
+    border: 1.5px solid #0000001A;
+    width: 360px;
+    height: auto;
+    border-top-right-radius:10px;
+    border-top-left-radius:80px;
+    padding-bottom: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 65px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+
+.big_card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 15px;
+}
+.card_btn{
+    @extend .description_btn;
+    background-color: var(--color-eihite);
+    color: var(--header-color2);
+    border: 1.5px solid #FBF1E7;
+    &:hover{
+        color: var(--color-wihite);
+        border-color: var(--hover-color);
+    }
+}
+.card-btn_div{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+@media(max-width:1115px){
+    .big_card{
+        grid-template-columns: auto auto;
+        grid-template-rows:auto auto auto ;
+    }
+}
+@media(max-width:800px){
+    .big_card{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+    .content_card{
+        margin: auto;
+        width: 270px;
+    }
+    .content_card-img{
+        width: 270px;
+    }
+    .content_text{
+        font-size: 20px;
+    }
+    .text_p{
+        width: 90%;
+    }
+    .content_card-p{
+        font-size: 16px;
+    }
+    .card_span{
+        gap: 80px;
+    }
+    .card_bottom-div{
+        gap: 90px;
+    }
+}
+

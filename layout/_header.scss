@@ -1,0 +1,33 @@
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 46px;
+    padding-top: 20px;
+}
+.home-header{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.element{
+   @extend .home-header;
+}
+.active{
+    color: var(--header-color2);
+}
+.menu_icon{
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
+.navlink_btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}

@@ -1,0 +1,30 @@
+@import "./layout/header";
+@import "./base/typography";
+@import "./utils/mixins";
+@import "./components/button";
+@import "./pages/responsive";
+@import url("./sidebar.js");
+@import "./pages/section1";
+@import "./pages/wrapper";
+@import "./pages/description";
+@import "./pages/content";
+@import "./pages/bg-pink-section";
+@import "./pages/paski-section";
+@import "./pages/bootom-section";
+@import "./layout/footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.container2{
+    max-width: 950px;
+    margin: auto;
+}
+

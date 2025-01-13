@@ -1,0 +1,62 @@
+
+.testimonial{
+    @extend .wrapper_p;
+    margin-top: 300px;
+}
+.making{
+    @extend .wrapper_subtitle;  
+}
+.you_p{
+    @extend .card_text;
+    width: 67%;
+    margin:15px auto;
+}
+.group-img{
+    margin-top: 80px;
+    text-align: center;
+}
+.group_bootom-text{
+    @extend .card_text;
+    color: var(--color-black);
+    width: 45%;
+    margin:30px auto;
+}
+.star{
+    text-align: center;
+    margin-top: -20px;
+}
+.augsta_p{
+    @extend .wrapper_p;
+    color: var(--color-black);
+    line-height: 18.75px;
+    font-weight: 400;
+   margin-top: 25px;
+}
+.paragraf{
+    @extend .card_text;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 14.06px;
+   margin:7px auto;
+   margin-bottom: 70px;
+}
+
+@media(max-width:768px){
+    .group_bootom-text{
+        width: 80%;
+    }
+    .you_p{
+        width: 70%;
+    }
+}
+@media(max-width:450px){
+    .group_bootom-text{
+        width: 95%;
+    }
+    .you_p{
+        width: 90%;
+    }
+    .testimonial{
+        margin-top: 180px;
+    }
+}

@@ -1,0 +1,68 @@
+
+
+.take_away{
+    @extend .wrapper_p;
+    text-align: start;
+}
+.food_p{
+    @extend .wrapper_subtitle;
+    text-align: start;
+    width: 60%;
+}
+
+.there_p{
+    @extend .card_text;
+    text-align: start;
+    width: 73%;
+}
+.bg_span{
+    gap: 25px;
+   display: flex;
+   margin-top: 35px;
+}
+
+.bg-pink_div {
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+.did{
+    position: relative;
+    left: -80px;
+}
+.bg_pink-section{
+    background-color: rgba(251, 241, 231, 0.4);
+    position: relative;
+    top: 110px;
+    padding: 40px 0px;
+}
+
+@media(max-width:975px){
+    .container2{
+        padding:0 15px;
+    }
+}
+@media(max-width:830px){
+    .bg-pink_div{
+        grid-template-columns: auto;
+    }
+    .did{
+        left: 0;
+        margin:60px auto;
+    }
+    .there_p{
+        margin-left: 0;
+        width: 90%;
+    }
+    .food_p{
+        width: 90%;
+    }
+}
+@media(max-width:410px){
+    .bg_span{
+        display: inline-block;
+    }
+    .bg_span img {
+        margin-bottom: 15px;
+    }
+}

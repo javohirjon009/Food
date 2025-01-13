@@ -1,0 +1,129 @@
+
+.wrapper_p{
+    @extend .navbar_a;
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: rgba(220, 120, 11, 0.7);
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 7px;
+    transition: none;
+    &:hover{
+        transform: none;
+    }
+}
+.card-img{
+    object-fit: cover;
+    padding: 18px 22px;
+}
+.img_card{
+    background-color: rgba(143, 166, 50, 0.1);
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 115px;
+}
+.card_subtitle{
+    font-family:"Philosopher";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--color-black);
+    margin-top: 20px;
+    margin-left: 90px
+}
+.card_text{
+    @extend .navbar_a;
+    margin-top: 10px;
+    width: 90%;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 10px;
+    transition: none;
+    &:hover{
+        transform: none;
+    }
+}
+.card_subtitle3{
+    @extend .card_subtitle;
+    margin-left: 105px;
+}
+.card_grid{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    margin-top: 35px;
+    gap: 80px;
+}
+.img_card2{
+    @extend .img_card;
+    background-color: rgba(230, 77, 46, 0.08);
+}
+.img_card3{
+    @extend .img_card;
+    background-color: rgba(220, 120, 11, 0.1);
+}
+.card-img2{
+    @extend .card-img;
+    margin-left: 3px;
+}
+.card-img3{
+    @extend .card-img;
+    position: relative;
+    left: -4px;
+}
+
+
+@media(max-width:1061px){
+    .card_subtitle{
+        font-size: 20px;
+    }
+    .card_text{
+        font-size: 14px;
+
+    }
+}
+@media(max-width:956px){
+    .card_grid{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    .card_text{
+        width: 30%;
+    }
+}
+@media(max-width:1115px){
+    .card_text{
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .card_grid{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+    }
+    .card_text{
+        margin-left: 0;
+        width: 80%;
+       margin:7px auto;
+    }
+    .card_subtitle{
+        margin-left: 0;
+    }
+    .card_subtitle3{
+        margin-left: 0;
+    }
+    .img_card{
+        margin: auto;
+    }
+    .wrapper_p{
+        margin-top: 0;
+    }
+    .wrapper_subtitle{
+        font-size: 23px;
+    }
+}

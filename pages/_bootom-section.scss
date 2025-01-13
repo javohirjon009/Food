@@ -1,0 +1,112 @@
+
+.bottom_p{
+    @extend .wrapper_p;
+    margin-top:100px;
+}
+.bottom-p2{
+    @extend .wrapper_subtitle;
+    width: 60%;
+    margin: auto;
+}
+.text_input{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40.6px;
+    width: 750px;
+    height: 75px;
+    border-radius: 10px;
+    padding-left: 30px;
+    margin-top: 10px;
+    border: none;
+}
+.bottom_btn{
+    width: 156px;
+    height: 75px;
+    border-radius: 10px;
+    background: var(--header-color2);
+    border: none;
+    color: var(--color-wihite);
+    font-size: 18px;
+    position: relative;
+    left: -160px;
+    &:hover{
+        background-color: var(--hover-color);
+        color: var(--color-wihite);
+    }
+}
+.inpu_ucuhn{
+    text-align: center;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+.bootom_section{
+    background-color: rgba(220, 120, 11, 0.1);
+    padding: 1px 0;
+    padding-bottom: 80px;
+}
+
+
+@media(max-width:1110px){
+    .text_input{
+        width: 450px;
+        height: 55px;
+    }
+    .bottom_btn{
+        width: 100px;
+        height: 54px;
+        margin-left: 60px
+    }
+}
+@media(max-width:960px){
+    .bottom_p2{
+        font-size:25px;
+    }
+}
+@media(max-width:830px){
+    .bottom-p2{
+        font-size: 19px;
+        width: 80%;
+    }
+    .text_input{
+        width: 50%;
+        height: 50px;
+       
+    }
+    .inpu_ucuhn{
+        display: flex;
+        align-items: center;
+    }
+    .bottom_btn{
+        width: 70px;
+        height: 49px;
+        margin-left: 90px;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+}
+@media(max-width:670px){
+    .text_input{
+        width: 270px;
+        height: auto;
+        min-width: 260px;
+    }
+   .bottom_btn{
+    margin-left:90px;
+    min-width: 70px;
+    height: 40px;
+   }
+   .inpu_ucuhn{
+    margin-left: 20px;
+   }
+   .bottom-p2{
+    font-size: 16px;
+    line-height: 25px;
+   }
+   .bottom_big{
+    text-align: center;
+    margin: auto;
+   }
+}

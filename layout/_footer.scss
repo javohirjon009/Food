@@ -1,0 +1,102 @@
+
+
+.footer_p{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.7);
+    // color: black;
+    margin-top: 15px;
+}
+.footer_subtitle{
+    font-family: "Philosopher";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.16px;
+    color: var(--color-wihite);
+}
+
+.footer_div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+}
+.footer{
+    background: #252525;
+    width: 100%;
+    height: auto;
+    padding: 90px 0px;
+}
+.footer_span i{
+    background: #6C27B3;
+    color: var(--color-wihite);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.footer_span2 i {
+    background: #4A7AFF;
+    color: var(--color-wihite);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.footer_span3 i {
+    background: #55ACEE;
+    color: var(--color-wihite);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.footer_span4 i {
+    background:#D22215;
+    color: var(--color-wihite);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media(max-width:768px){
+    .footer_div{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 20px;
+    }
+}
