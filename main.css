@@ -517,8 +517,9 @@
     grid-template-rows: auto auto auto auto auto auto;
   }
   .content_card {
-    text-align: center;
+    margin: auto;
     width: 270px;
+    text-align: center;
   }
   .content_card-img {
     width: 270px;
